@@ -1,0 +1,16 @@
+{
+  "name": "@light/config",
+  "version": "0.0.0",
+  "private": true,
+  "files": [
+    "eslint",
+    "tsconfig"
+  ],
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^14.1.0",
+    "@types/eslint": "^8.56.2",
+    "@typescript-eslint/parser": "^6.19.1",
+    "@vercel/style-guide": "^5.1.0",
+    "eslint": "^8.56.0"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "extends": "@light/config/tsconfig/base.json",
+  "include": ["**/*.ts", "**/*.tsx", ".*.*js"],
+  "exclude": ["node_modules", "dist", "apps/**", "packages/**"],
+}

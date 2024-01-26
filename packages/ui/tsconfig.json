@@ -1,0 +1,9 @@
+{
+  "extends": "@light/config/tsconfig/react.json",
+  "compilerOptions": {
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+  },
+  "exclude": ["node_modules", "dist"],
+  "include": ["**/*.ts", "**/*.tsx", ".*.js"],
+  "files": ["css.module.d.ts"],
+}

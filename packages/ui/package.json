@@ -1,0 +1,48 @@
+{
+  "name": "@light/ui",
+  "version": "0.0.1",
+  "description": "",
+  "private": false,
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/cjs/index.cjs",
+  "module": "./dist/mjs/index.mjs",
+  "types": "./dist/cjs/types.d.cts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/mjs/types.d.mts",
+        "default": "./dist/mjs/index.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/types.d.cts",
+        "default": "./dist/cjs/index.cjs"
+      },
+      "types": "./dist/cjs/types.d.cts",
+      "default": "./dist/umd/index.js"
+    }
+  },
+  "scripts": {
+    "build": "rimraf dist && rollup -c rollup.config.mjs",
+    "dev": "rollup -c -w rollup.config.mjs",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@light/config": "workspace:^",
+    "react": "^18",
+    "react-dom": "^18",
+    "@light/core": "workspace:^",
+    "typescript-plugin-css-modules": "^5.0.2"
+  },
+  "peerDependencies": {
+    "react": "^18",
+    "react-dom": "^18",
+    "@light/core": "workspace:^"
+  }
+}

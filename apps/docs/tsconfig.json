@@ -1,0 +1,16 @@
+{
+  "extends": "@light/config/tsconfig/next.json",
+  "compilerOptions": {
+    "incremental": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".*.js",
+  ],
+  "exclude": ["node_modules"],
+}
